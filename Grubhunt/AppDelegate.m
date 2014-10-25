@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 
 @interface AppDelegate ()
 
@@ -16,7 +19,43 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [Parse setApplicationId:@"OhQNjiEV5AKYDTMLg77LS9FLl0qhCn1wekpNRA31"
+                  clientKey:@"Knfwq2V6QKAELVb0ZGg8MenAGyamKfezIfYaewlK"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    //Status Bar
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    //Navigation Bar Color
+    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0xfc7a11)];
+    
+    //Nav Bar Back Button Color
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor clearColor];
+    shadow.shadowOffset = CGSizeMake(0, .0);
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                           shadow, NSShadowAttributeName,
+                                                           [UIFont fontWithName:@"AvenirNext-Bold" size:19], NSFontAttributeName, nil]];
+    
+    //Nav Bar Back Button Color
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+//    //Tab Bar Color
+//    [[UITabBar appearance] setBarTintColor:UIColorFromRGB(0xfc9611)];
+    //Tab Bar Icon Colors
+    [[UITabBar appearance] setTintColor:[UIColor orangeColor]];
+    
+    //Tab Bar Text Color = white
+    [[UITabBarItem appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIColor orangeColor], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];
+    
+    
+    
     return YES;
 }
 

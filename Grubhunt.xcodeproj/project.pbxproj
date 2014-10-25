@@ -7,14 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A86125019F841BA00D8C01B /* GhPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86124E19F841BA00D8C01B /* GhPlaceholder.png */; };
+		1A86125319F8628200D8C01B /* Map Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86125119F8628200D8C01B /* Map Icon.png */; };
+		1A86125419F8628200D8C01B /* Phone Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86125219F8628200D8C01B /* Phone Icon.png */; };
+		1A86125719F8635300D8C01B /* CMUmapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86125519F8635300D8C01B /* CMUmapicon.png */; };
+		1A86125819F8635300D8C01B /* CMUphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86125619F8635300D8C01B /* CMUphone.png */; };
+		1A86126619F9917300D8C01B /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A86126519F9917300D8C01B /* CNPPopupController.m */; };
+		1A86126819FA829C00D8C01B /* DealView.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86126719FA829C00D8C01B /* DealView.png */; };
+		1A86127019FA8DCE00D8C01B /* RedeemButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86126F19FA8DCE00D8C01B /* RedeemButton@2x.png */; };
+		1A86127319FA964700D8C01B /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A86127219FA964700D8C01B /* InitialViewController.m */; };
+		1A86127B19FAD83B00D8C01B /* TableCellFade.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86127A19FAD83B00D8C01B /* TableCellFade.png */; };
+		1A86128319FAE52C00D8C01B /* DealSmiley@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86128219FAE52B00D8C01B /* DealSmiley@2x.png */; };
+		1A86128719FB022100D8C01B /* whiteStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86128619FB022100D8C01B /* whiteStar@2x.png */; };
 		1ABA703919F4415300FA5272 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA703819F4415300FA5272 /* main.m */; };
 		1ABA703C19F4415300FA5272 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA703B19F4415300FA5272 /* AppDelegate.m */; };
-		1ABA703F19F4415300FA5272 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA703E19F4415300FA5272 /* FirstViewController.m */; };
-		1ABA704219F4415300FA5272 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA704119F4415300FA5272 /* SecondViewController.m */; };
 		1ABA704519F4415300FA5272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABA704319F4415300FA5272 /* Main.storyboard */; };
 		1ABA704719F4415300FA5272 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABA704619F4415300FA5272 /* Images.xcassets */; };
 		1ABA704A19F4415300FA5272 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ABA704819F4415300FA5272 /* LaunchScreen.xib */; };
 		1ABA705619F4415400FA5272 /* GrubhuntTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA705519F4415400FA5272 /* GrubhuntTests.m */; };
+		1ABA706119F4425400FA5272 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706019F4425400FA5272 /* Bolts.framework */; };
+		1ABA706319F4426000FA5272 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706219F4426000FA5272 /* Parse.framework */; };
+		1ABA706E19F443CC00FA5272 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706419F443CC00FA5272 /* AudioToolbox.framework */; };
+		1ABA706F19F443CC00FA5272 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706519F443CC00FA5272 /* CFNetwork.framework */; };
+		1ABA707019F443CC00FA5272 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706619F443CC00FA5272 /* CoreGraphics.framework */; };
+		1ABA707119F443CC00FA5272 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706719F443CC00FA5272 /* CoreLocation.framework */; };
+		1ABA707219F443CC00FA5272 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706819F443CC00FA5272 /* libz.dylib */; };
+		1ABA707319F443CC00FA5272 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706919F443CC00FA5272 /* MobileCoreServices.framework */; };
+		1ABA707419F443CC00FA5272 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706A19F443CC00FA5272 /* QuartzCore.framework */; };
+		1ABA707519F443CC00FA5272 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706B19F443CC00FA5272 /* Security.framework */; };
+		1ABA707619F443CC00FA5272 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706C19F443CC00FA5272 /* StoreKit.framework */; };
+		1ABA707719F443CC00FA5272 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABA706D19F443CC00FA5272 /* SystemConfiguration.framework */; };
+		1ABA707A19F44B8F00FA5272 /* Deal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA707919F44B8F00FA5272 /* Deal.m */; };
+		1ABA707D19F44BEA00FA5272 /* DealTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA707C19F44BEA00FA5272 /* DealTableCell.m */; };
+		1ABA708019F44C2900FA5272 /* DealTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA707F19F44C2900FA5272 /* DealTableViewController.m */; };
+		1ABA708319F454AC00FA5272 /* DealioTableCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ABA708219F454AC00FA5272 /* DealioTableCell.png */; };
+		1ABA708619F4666C00FA5272 /* DealDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA708519F4666C00FA5272 /* DealDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,21 +55,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A86124E19F841BA00D8C01B /* GhPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GhPlaceholder.png; sourceTree = "<group>"; };
+		1A86125119F8628200D8C01B /* Map Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map Icon.png"; sourceTree = "<group>"; };
+		1A86125219F8628200D8C01B /* Phone Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phone Icon.png"; sourceTree = "<group>"; };
+		1A86125519F8635300D8C01B /* CMUmapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CMUmapicon.png; sourceTree = "<group>"; };
+		1A86125619F8635300D8C01B /* CMUphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CMUphone.png; sourceTree = "<group>"; };
+		1A86126419F9917300D8C01B /* CNPPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPPopupController.h; sourceTree = "<group>"; };
+		1A86126519F9917300D8C01B /* CNPPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPPopupController.m; sourceTree = "<group>"; };
+		1A86126719FA829C00D8C01B /* DealView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DealView.png; sourceTree = "<group>"; };
+		1A86126F19FA8DCE00D8C01B /* RedeemButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RedeemButton@2x.png"; sourceTree = "<group>"; };
+		1A86127119FA964700D8C01B /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		1A86127219FA964700D8C01B /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		1A86127A19FAD83B00D8C01B /* TableCellFade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableCellFade.png; sourceTree = "<group>"; };
+		1A86128219FAE52B00D8C01B /* DealSmiley@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DealSmiley@2x.png"; sourceTree = "<group>"; };
+		1A86128619FB022100D8C01B /* whiteStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteStar@2x.png"; sourceTree = "<group>"; };
 		1ABA703319F4415300FA5272 /* Grubhunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grubhunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABA703719F4415300FA5272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ABA703819F4415300FA5272 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1ABA703A19F4415300FA5272 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1ABA703B19F4415300FA5272 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1ABA703D19F4415300FA5272 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		1ABA703E19F4415300FA5272 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		1ABA704019F4415300FA5272 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		1ABA704119F4415300FA5272 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		1ABA704419F4415300FA5272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1ABA704619F4415300FA5272 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1ABA704919F4415300FA5272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1ABA704F19F4415400FA5272 /* GrubhuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrubhuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABA705419F4415400FA5272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ABA705519F4415400FA5272 /* GrubhuntTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrubhuntTests.m; sourceTree = "<group>"; };
+		1ABA706019F4425400FA5272 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		1ABA706219F4426000FA5272 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		1ABA706419F443CC00FA5272 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1ABA706519F443CC00FA5272 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1ABA706619F443CC00FA5272 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1ABA706719F443CC00FA5272 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1ABA706819F443CC00FA5272 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1ABA706919F443CC00FA5272 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1ABA706A19F443CC00FA5272 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1ABA706B19F443CC00FA5272 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1ABA706C19F443CC00FA5272 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1ABA706D19F443CC00FA5272 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1ABA707819F44B8F00FA5272 /* Deal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deal.h; sourceTree = "<group>"; };
+		1ABA707919F44B8F00FA5272 /* Deal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deal.m; sourceTree = "<group>"; };
+		1ABA707B19F44BEA00FA5272 /* DealTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealTableCell.h; sourceTree = "<group>"; };
+		1ABA707C19F44BEA00FA5272 /* DealTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealTableCell.m; sourceTree = "<group>"; };
+		1ABA707E19F44C2900FA5272 /* DealTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealTableViewController.h; sourceTree = "<group>"; };
+		1ABA707F19F44C2900FA5272 /* DealTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealTableViewController.m; sourceTree = "<group>"; };
+		1ABA708219F454AC00FA5272 /* DealioTableCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DealioTableCell.png; sourceTree = "<group>"; };
+		1ABA708419F4666C00FA5272 /* DealDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealDetailViewController.h; sourceTree = "<group>"; };
+		1ABA708519F4666C00FA5272 /* DealDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +108,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ABA706E19F443CC00FA5272 /* AudioToolbox.framework in Frameworks */,
+				1ABA706F19F443CC00FA5272 /* CFNetwork.framework in Frameworks */,
+				1ABA707019F443CC00FA5272 /* CoreGraphics.framework in Frameworks */,
+				1ABA707119F443CC00FA5272 /* CoreLocation.framework in Frameworks */,
+				1ABA707219F443CC00FA5272 /* libz.dylib in Frameworks */,
+				1ABA707319F443CC00FA5272 /* MobileCoreServices.framework in Frameworks */,
+				1ABA707419F443CC00FA5272 /* QuartzCore.framework in Frameworks */,
+				1ABA707519F443CC00FA5272 /* Security.framework in Frameworks */,
+				1ABA707619F443CC00FA5272 /* StoreKit.framework in Frameworks */,
+				1ABA707719F443CC00FA5272 /* SystemConfiguration.framework in Frameworks */,
+				1ABA706319F4426000FA5272 /* Parse.framework in Frameworks */,
+				1ABA706119F4425400FA5272 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +133,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A86126319F9917300D8C01B /* CNPPopupController */ = {
+			isa = PBXGroup;
+			children = (
+				1A86126419F9917300D8C01B /* CNPPopupController.h */,
+				1A86126519F9917300D8C01B /* CNPPopupController.m */,
+			);
+			path = CNPPopupController;
+			sourceTree = "<group>";
+		};
+		1A908F5819F6DCB70011C0D3 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1A86126319F9917300D8C01B /* CNPPopupController */,
+			);
+			name = Libraries;
+			path = Grubhunt;
+			sourceTree = "<group>";
+		};
 		1ABA702A19F4415300FA5272 = {
 			isa = PBXGroup;
 			children = (
 				1ABA703519F4415300FA5272 /* Grubhunt */,
 				1ABA705219F4415400FA5272 /* GrubhuntTests */,
 				1ABA703419F4415300FA5272 /* Products */,
+				1ABA705F19F4424500FA5272 /* Frameworks */,
+				1A908F5819F6DCB70011C0D3 /* Libraries */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,11 +176,11 @@
 			children = (
 				1ABA703A19F4415300FA5272 /* AppDelegate.h */,
 				1ABA703B19F4415300FA5272 /* AppDelegate.m */,
-				1ABA703D19F4415300FA5272 /* FirstViewController.h */,
-				1ABA703E19F4415300FA5272 /* FirstViewController.m */,
-				1ABA704019F4415300FA5272 /* SecondViewController.h */,
-				1ABA704119F4415300FA5272 /* SecondViewController.m */,
 				1ABA704319F4415300FA5272 /* Main.storyboard */,
+				1A86127119FA964700D8C01B /* InitialViewController.h */,
+				1A86127219FA964700D8C01B /* InitialViewController.m */,
+				1ABA708119F453D500FA5272 /* Deals */,
+				1AEFCA9A19F5C9090067BAFE /* Images */,
 				1ABA704619F4415300FA5272 /* Images.xcassets */,
 				1ABA704819F4415300FA5272 /* LaunchScreen.xib */,
 				1ABA703619F4415300FA5272 /* Supporting Files */,
@@ -101,6 +191,7 @@
 		1ABA703619F4415300FA5272 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1ABA708219F454AC00FA5272 /* DealioTableCell.png */,
 				1ABA703719F4415300FA5272 /* Info.plist */,
 				1ABA703819F4415300FA5272 /* main.m */,
 			);
@@ -122,6 +213,58 @@
 				1ABA705419F4415400FA5272 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1ABA705F19F4424500FA5272 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1ABA706419F443CC00FA5272 /* AudioToolbox.framework */,
+				1ABA706519F443CC00FA5272 /* CFNetwork.framework */,
+				1ABA706619F443CC00FA5272 /* CoreGraphics.framework */,
+				1ABA706719F443CC00FA5272 /* CoreLocation.framework */,
+				1ABA706819F443CC00FA5272 /* libz.dylib */,
+				1ABA706919F443CC00FA5272 /* MobileCoreServices.framework */,
+				1ABA706A19F443CC00FA5272 /* QuartzCore.framework */,
+				1ABA706B19F443CC00FA5272 /* Security.framework */,
+				1ABA706C19F443CC00FA5272 /* StoreKit.framework */,
+				1ABA706D19F443CC00FA5272 /* SystemConfiguration.framework */,
+				1ABA706219F4426000FA5272 /* Parse.framework */,
+				1ABA706019F4425400FA5272 /* Bolts.framework */,
+			);
+			name = Frameworks;
+			path = Grubhunt;
+			sourceTree = "<group>";
+		};
+		1ABA708119F453D500FA5272 /* Deals */ = {
+			isa = PBXGroup;
+			children = (
+				1ABA707819F44B8F00FA5272 /* Deal.h */,
+				1ABA707919F44B8F00FA5272 /* Deal.m */,
+				1ABA707B19F44BEA00FA5272 /* DealTableCell.h */,
+				1ABA707C19F44BEA00FA5272 /* DealTableCell.m */,
+				1ABA707E19F44C2900FA5272 /* DealTableViewController.h */,
+				1ABA707F19F44C2900FA5272 /* DealTableViewController.m */,
+				1ABA708419F4666C00FA5272 /* DealDetailViewController.h */,
+				1ABA708519F4666C00FA5272 /* DealDetailViewController.m */,
+			);
+			name = Deals;
+			sourceTree = "<group>";
+		};
+		1AEFCA9A19F5C9090067BAFE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1A86128619FB022100D8C01B /* whiteStar@2x.png */,
+				1A86128219FAE52B00D8C01B /* DealSmiley@2x.png */,
+				1A86127A19FAD83B00D8C01B /* TableCellFade.png */,
+				1A86126F19FA8DCE00D8C01B /* RedeemButton@2x.png */,
+				1A86126719FA829C00D8C01B /* DealView.png */,
+				1A86125519F8635300D8C01B /* CMUmapicon.png */,
+				1A86125619F8635300D8C01B /* CMUphone.png */,
+				1A86125119F8628200D8C01B /* Map Icon.png */,
+				1A86125219F8628200D8C01B /* Phone Icon.png */,
+				1A86124E19F841BA00D8C01B /* GhPlaceholder.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +347,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A86125819F8635300D8C01B /* CMUphone.png in Resources */,
+				1ABA708319F454AC00FA5272 /* DealioTableCell.png in Resources */,
 				1ABA704519F4415300FA5272 /* Main.storyboard in Resources */,
+				1A86125019F841BA00D8C01B /* GhPlaceholder.png in Resources */,
+				1A86128319FAE52C00D8C01B /* DealSmiley@2x.png in Resources */,
+				1A86127019FA8DCE00D8C01B /* RedeemButton@2x.png in Resources */,
 				1ABA704A19F4415300FA5272 /* LaunchScreen.xib in Resources */,
+				1A86125319F8628200D8C01B /* Map Icon.png in Resources */,
+				1A86126819FA829C00D8C01B /* DealView.png in Resources */,
+				1A86125719F8635300D8C01B /* CMUmapicon.png in Resources */,
 				1ABA704719F4415300FA5272 /* Images.xcassets in Resources */,
+				1A86127B19FAD83B00D8C01B /* TableCellFade.png in Resources */,
+				1A86128719FB022100D8C01B /* whiteStar@2x.png in Resources */,
+				1A86125419F8628200D8C01B /* Phone Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +378,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ABA704219F4415300FA5272 /* SecondViewController.m in Sources */,
+				1ABA707D19F44BEA00FA5272 /* DealTableCell.m in Sources */,
+				1A86126619F9917300D8C01B /* CNPPopupController.m in Sources */,
+				1ABA708619F4666C00FA5272 /* DealDetailViewController.m in Sources */,
+				1A86127319FA964700D8C01B /* InitialViewController.m in Sources */,
 				1ABA703C19F4415300FA5272 /* AppDelegate.m in Sources */,
-				1ABA703F19F4415300FA5272 /* FirstViewController.m in Sources */,
+				1ABA708019F44C2900FA5272 /* DealTableViewController.m in Sources */,
+				1ABA707A19F44B8F00FA5272 /* Deal.m in Sources */,
 				1ABA703919F4415300FA5272 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +507,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Grubhunt",
+				);
 				INFOPLIST_FILE = Grubhunt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +524,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Grubhunt",
+				);
 				INFOPLIST_FILE = Grubhunt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +590,7 @@
 				1ABA705B19F4415400FA5272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1ABA705C19F4415400FA5272 /* Build configuration list for PBXNativeTarget "GrubhuntTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +599,7 @@
 				1ABA705E19F4415400FA5272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

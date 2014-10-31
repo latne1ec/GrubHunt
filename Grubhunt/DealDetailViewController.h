@@ -21,9 +21,16 @@
 @property (strong, nonatomic) IBOutlet UITextView *dealContact;
 @property (weak, nonatomic) IBOutlet UITextView *dealHours;
 @property (weak, nonatomic) IBOutlet UITextView *specialOneTextView;
-@property (weak, nonatomic) IBOutlet UITextView *specialTwoTextView;
+@property (weak, nonatomic) IBOutlet UITextView *termsOfUseTextView;
 @property (weak, nonatomic) NSString *dealChannel;
 @property (nonatomic, strong) Deal *deal;
+
+@property (strong, nonatomic) IBOutlet UIButton *favButton;
+
+@property (strong, nonatomic) IBOutlet UIButton *redeemButton;
+
+@property (strong, nonatomic) PFUser *user;
+
 
 - (IBAction)redeemSpecialOne:(id)sender;
 

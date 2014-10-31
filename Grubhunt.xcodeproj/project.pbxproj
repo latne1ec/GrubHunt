@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A08ECCA1A029DA300B41A53 /* TargetLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A08ECC91A029DA300B41A53 /* TargetLocation.png */; };
+		1A1824E919FD2BFE0031099E /* Phone Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1824E819FD2BFE0031099E /* Phone Icon@2x.png */; };
+		1A1824EB19FD2C150031099E /* Map Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1824EA19FD2C150031099E /* Map Icon@2x.png */; };
+		1A1824FB19FD7C1C0031099E /* OKButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A1824FA19FD7C1C0031099E /* OKButton@2x.png */; };
+		1A75A7431A03FBDD00618ADD /* searchBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A75A7421A03FBDD00618ADD /* searchBar.png */; };
+		1A7E796919FEC766008556F9 /* favStarSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E796819FEC766008556F9 /* favStarSelected@2x.png */; };
+		1A7E796E1A010A73008556F9 /* CMUmapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E796C1A010A73008556F9 /* CMUmapicon.png */; };
+		1A7E796F1A010A73008556F9 /* CMUphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E796D1A010A73008556F9 /* CMUphone.png */; };
+		1A7E79711A01165B008556F9 /* favStar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E79701A01165B008556F9 /* favStar@2x.png */; };
+		1A7E79731A011B3B008556F9 /* favStar2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E79721A011B3B008556F9 /* favStar2@2x.png */; };
+		1A7E79771A012270008556F9 /* favStar3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E79761A012270008556F9 /* favStar3@2x.png */; };
+		1A7E797F1A015F20008556F9 /* GrubHuntPlaceHolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E797E1A015F20008556F9 /* GrubHuntPlaceHolder@2x.png */; };
 		1A86125019F841BA00D8C01B /* GhPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86124E19F841BA00D8C01B /* GhPlaceholder.png */; };
-		1A86125319F8628200D8C01B /* Map Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86125119F8628200D8C01B /* Map Icon.png */; };
-		1A86125419F8628200D8C01B /* Phone Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86125219F8628200D8C01B /* Phone Icon.png */; };
-		1A86125719F8635300D8C01B /* CMUmapicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86125519F8635300D8C01B /* CMUmapicon.png */; };
-		1A86125819F8635300D8C01B /* CMUphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86125619F8635300D8C01B /* CMUphone.png */; };
 		1A86126619F9917300D8C01B /* CNPPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A86126519F9917300D8C01B /* CNPPopupController.m */; };
 		1A86126819FA829C00D8C01B /* DealView.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86126719FA829C00D8C01B /* DealView.png */; };
 		1A86127019FA8DCE00D8C01B /* RedeemButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86126F19FA8DCE00D8C01B /* RedeemButton@2x.png */; };
@@ -55,11 +63,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A08ECC91A029DA300B41A53 /* TargetLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TargetLocation.png; sourceTree = "<group>"; };
+		1A1824E819FD2BFE0031099E /* Phone Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phone Icon@2x.png"; sourceTree = "<group>"; };
+		1A1824EA19FD2C150031099E /* Map Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map Icon@2x.png"; sourceTree = "<group>"; };
+		1A1824FA19FD7C1C0031099E /* OKButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OKButton@2x.png"; sourceTree = "<group>"; };
+		1A75A7421A03FBDD00618ADD /* searchBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchBar.png; sourceTree = "<group>"; };
+		1A7E796819FEC766008556F9 /* favStarSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favStarSelected@2x.png"; sourceTree = "<group>"; };
+		1A7E796C1A010A73008556F9 /* CMUmapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CMUmapicon.png; sourceTree = "<group>"; };
+		1A7E796D1A010A73008556F9 /* CMUphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CMUphone.png; sourceTree = "<group>"; };
+		1A7E79701A01165B008556F9 /* favStar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favStar@2x.png"; sourceTree = "<group>"; };
+		1A7E79721A011B3B008556F9 /* favStar2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favStar2@2x.png"; sourceTree = "<group>"; };
+		1A7E79761A012270008556F9 /* favStar3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favStar3@2x.png"; sourceTree = "<group>"; };
+		1A7E797E1A015F20008556F9 /* GrubHuntPlaceHolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GrubHuntPlaceHolder@2x.png"; sourceTree = "<group>"; };
 		1A86124E19F841BA00D8C01B /* GhPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GhPlaceholder.png; sourceTree = "<group>"; };
-		1A86125119F8628200D8C01B /* Map Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map Icon.png"; sourceTree = "<group>"; };
-		1A86125219F8628200D8C01B /* Phone Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phone Icon.png"; sourceTree = "<group>"; };
-		1A86125519F8635300D8C01B /* CMUmapicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CMUmapicon.png; sourceTree = "<group>"; };
-		1A86125619F8635300D8C01B /* CMUphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CMUphone.png; sourceTree = "<group>"; };
 		1A86126419F9917300D8C01B /* CNPPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNPPopupController.h; sourceTree = "<group>"; };
 		1A86126519F9917300D8C01B /* CNPPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNPPopupController.m; sourceTree = "<group>"; };
 		1A86126719FA829C00D8C01B /* DealView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DealView.png; sourceTree = "<group>"; };
@@ -253,15 +269,23 @@
 		1AEFCA9A19F5C9090067BAFE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1A75A7421A03FBDD00618ADD /* searchBar.png */,
+				1A08ECC91A029DA300B41A53 /* TargetLocation.png */,
+				1A7E797E1A015F20008556F9 /* GrubHuntPlaceHolder@2x.png */,
+				1A7E79761A012270008556F9 /* favStar3@2x.png */,
+				1A7E79721A011B3B008556F9 /* favStar2@2x.png */,
+				1A7E79701A01165B008556F9 /* favStar@2x.png */,
+				1A7E796C1A010A73008556F9 /* CMUmapicon.png */,
+				1A7E796D1A010A73008556F9 /* CMUphone.png */,
+				1A7E796819FEC766008556F9 /* favStarSelected@2x.png */,
+				1A1824FA19FD7C1C0031099E /* OKButton@2x.png */,
+				1A1824EA19FD2C150031099E /* Map Icon@2x.png */,
+				1A1824E819FD2BFE0031099E /* Phone Icon@2x.png */,
 				1A86128619FB022100D8C01B /* whiteStar@2x.png */,
 				1A86128219FAE52B00D8C01B /* DealSmiley@2x.png */,
 				1A86127A19FAD83B00D8C01B /* TableCellFade.png */,
 				1A86126F19FA8DCE00D8C01B /* RedeemButton@2x.png */,
 				1A86126719FA829C00D8C01B /* DealView.png */,
-				1A86125519F8635300D8C01B /* CMUmapicon.png */,
-				1A86125619F8635300D8C01B /* CMUphone.png */,
-				1A86125119F8628200D8C01B /* Map Icon.png */,
-				1A86125219F8628200D8C01B /* Phone Icon.png */,
 				1A86124E19F841BA00D8C01B /* GhPlaceholder.png */,
 			);
 			name = Images;
@@ -319,6 +343,7 @@
 					};
 					1ABA704E19F4415400FA5272 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = HL4WWQQF9X;
 						TestTargetID = 1ABA703219F4415300FA5272;
 					};
 				};
@@ -347,20 +372,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A86125819F8635300D8C01B /* CMUphone.png in Resources */,
+				1A7E796F1A010A73008556F9 /* CMUphone.png in Resources */,
 				1ABA708319F454AC00FA5272 /* DealioTableCell.png in Resources */,
 				1ABA704519F4415300FA5272 /* Main.storyboard in Resources */,
+				1A7E796919FEC766008556F9 /* favStarSelected@2x.png in Resources */,
 				1A86125019F841BA00D8C01B /* GhPlaceholder.png in Resources */,
+				1A1824EB19FD2C150031099E /* Map Icon@2x.png in Resources */,
+				1A08ECCA1A029DA300B41A53 /* TargetLocation.png in Resources */,
 				1A86128319FAE52C00D8C01B /* DealSmiley@2x.png in Resources */,
+				1A7E797F1A015F20008556F9 /* GrubHuntPlaceHolder@2x.png in Resources */,
 				1A86127019FA8DCE00D8C01B /* RedeemButton@2x.png in Resources */,
 				1ABA704A19F4415300FA5272 /* LaunchScreen.xib in Resources */,
-				1A86125319F8628200D8C01B /* Map Icon.png in Resources */,
 				1A86126819FA829C00D8C01B /* DealView.png in Resources */,
-				1A86125719F8635300D8C01B /* CMUmapicon.png in Resources */,
 				1ABA704719F4415300FA5272 /* Images.xcassets in Resources */,
+				1A7E79711A01165B008556F9 /* favStar@2x.png in Resources */,
+				1A7E796E1A010A73008556F9 /* CMUmapicon.png in Resources */,
+				1A75A7431A03FBDD00618ADD /* searchBar.png in Resources */,
+				1A7E79771A012270008556F9 /* favStar3@2x.png in Resources */,
+				1A1824FB19FD7C1C0031099E /* OKButton@2x.png in Resources */,
+				1A1824E919FD2BFE0031099E /* Phone Icon@2x.png in Resources */,
 				1A86127B19FAD83B00D8C01B /* TableCellFade.png in Resources */,
 				1A86128719FB022100D8C01B /* whiteStar@2x.png in Resources */,
-				1A86125419F8628200D8C01B /* Phone Icon.png in Resources */,
+				1A7E79731A011B3B008556F9 /* favStar2@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +477,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Evan Latner (UMS36H794M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Evan Latner (UMS36H794M)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -464,6 +498,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b134fa2d-fc4c-4232-b058-5a7ca409f537";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -485,7 +520,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Evan Latner (UMS36H794M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Evan Latner (UMS36H794M)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -498,6 +534,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "b134fa2d-fc4c-4232-b058-5a7ca409f537";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -507,8 +544,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Evan Latner (UMS36H794M)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Grubhunt",
@@ -517,6 +554,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b134fa2d-fc4c-4232-b058-5a7ca409f537";
 			};
 			name = Debug;
 		};
@@ -524,8 +562,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Evan Latner (UMS36H794M)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Grubhunt",
@@ -534,6 +572,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b134fa2d-fc4c-4232-b058-5a7ca409f537";
 			};
 			name = Release;
 		};
@@ -541,6 +580,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -552,6 +593,7 @@
 				INFOPLIST_FILE = GrubhuntTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grubhunt.app/Grubhunt";
 			};
 			name = Debug;
@@ -560,6 +602,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -567,6 +611,7 @@
 				INFOPLIST_FILE = GrubhuntTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grubhunt.app/Grubhunt";
 			};
 			name = Release;

@@ -12,4 +12,7 @@
 
 - (IBAction)createUser:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIButton *okButton;
+
+
 @end

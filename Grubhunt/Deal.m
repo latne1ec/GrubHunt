@@ -15,7 +15,7 @@
 @synthesize imageFile;
 @synthesize description;
 @synthesize specialOne;
-@synthesize specialTwo;
+@synthesize termsOfUse;
 @synthesize channel;
 
 

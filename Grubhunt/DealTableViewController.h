@@ -8,11 +8,13 @@
 
 #import <Parse/Parse.h>
 
-@interface DealTableViewController : PFQueryTableViewController
+@interface DealTableViewController : PFQueryTableViewController <UITableViewDelegate>
 
 @property (nonatomic, strong) PFGeoPoint *userLocation;
 
 @property (strong, nonatomic) PFUser *user;
+
+
 
 
 

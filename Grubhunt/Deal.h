@@ -20,7 +20,7 @@
 @property (nonatomic, strong) NSString *contact;
 @property (nonatomic, strong) NSArray *hours;
 @property (nonatomic, strong) NSArray *specialOne;
-@property (nonatomic, strong) NSArray *specialTwo;
+@property (nonatomic, strong) NSArray *termsOfUse;
 @property (nonatomic, strong) NSString *channel;
 
 

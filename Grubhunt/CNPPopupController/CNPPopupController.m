@@ -516,7 +516,7 @@ UIInterfaceOrientationMask UIInterfaceOrientationMaskFromOrientation(UIInterface
 + (CNPPopupButtonItem *)defaultButtonItemWithTitle:(NSAttributedString *)title backgroundColor:(UIColor *)color {
     CNPPopupButtonItem *item = [[CNPPopupButtonItem alloc] init];
     item.buttonTitle = title;
-    item.cornerRadius = 3;
+    item.cornerRadius = 5;
     item.backgroundColor = color;
     item.buttonHeight = 50;
     return item;

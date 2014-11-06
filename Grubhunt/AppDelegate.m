@@ -31,7 +31,7 @@
     //Navigation Bar Color
     //[[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0xFF6600)];
     
-    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x8e0000)];
+    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0xbc0101)];
     
     //Nav Bar Back Button Color
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];

@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *dealHours;
 @property (weak, nonatomic) IBOutlet UITextView *specialOneTextView;
 @property (weak, nonatomic) IBOutlet UITextView *termsOfUseTextView;
+@property (weak, nonatomic) IBOutlet UITextView *couponCodeTextView;
 @property (weak, nonatomic) NSString *dealChannel;
 @property (nonatomic, strong) Deal *deal;
 

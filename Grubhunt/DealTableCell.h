@@ -15,6 +15,10 @@
 @property (nonatomic, weak) IBOutlet UILabel *dealTeaser;
 @property (nonatomic, weak) IBOutlet UIImageView *thumbnailImageView;
 
+@property (strong, nonatomic) NSString *dealChannel;
+
+@property (weak, nonatomic) IBOutlet UIButton *favButton;
+
 
 
 

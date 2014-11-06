@@ -11,26 +11,22 @@
 #import "DealTableCell.h"
 #import "DealDetailViewController.h"
 
+//***********************************
 @interface DealTableViewController() <UISearchDisplayDelegate, UISearchBarDelegate> {
-    
 }
-
 @property (nonatomic, strong) UISearchBar *searchBar;
 @property (nonatomic, strong) UISearchDisplayController *searchController;
 @property (nonatomic, strong) NSMutableArray *searchResults;
-
-
-
 @end
+//***********************************
 
-/////////////////////////////////////////////////
 
 @interface DealTableViewController ()
+
 
 @end
 
 @implementation DealTableViewController
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,14 +34,12 @@
     //Reroute to initial view to create user
     PFUser *currentuser = [PFUser currentUser];
     if (currentuser) {
-    //NSLog(@"Current user: %@", currentuser);
-        
+        [[PFUser currentUser] incrementKey:@"RunCount"];
     }
     
     else {
         [self performSegueWithIdentifier:@"showInitialView" sender:self];
     }
-    
     
     //remove unused table cell lines
     self.tableView.tableFooterView = [UIView new];
@@ -55,9 +49,7 @@
     
     //Set up search bar
     self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
-    
     self.tableView.tableHeaderView = self.searchBar;
-    
     self.searchController = [[UISearchDisplayController alloc] initWithSearchBar:self.searchBar contentsController:self];
     
     self.searchController.searchResultsDataSource = self;
@@ -72,13 +64,14 @@
     
     [[UISearchBar appearance] setBackgroundImage:[UIImage imageNamed:@"searchBar.png"]];
 
+
 }
 
 - (void) viewWillAppear:(BOOL)animated {
     
     //Get users current location and save it to Parse
-    if([PFUser currentUser])
-    {
+    if([PFUser currentUser]) {
+        
         self.user = [PFUser currentUser];
         
         [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
@@ -123,7 +116,7 @@
     
     PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
     [query orderByAscending:@"dealName"];
-    //[query whereKey:@"dealLocation" nearGeoPoint:self.userLocation withinMiles:50];
+   // [query whereKey:@"dealLocation" nearGeoPoint:self.userLocation withinMiles:25];
     
     return query;
     
@@ -135,21 +128,17 @@
     return 232;
 }
 
-
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     if (tableView == self.tableView) {
-        //if (tableView == self.searchDisplayController.searchResultsTableView) {
-        
         return self.objects.count;
         
-    } else {
         
-        return self.searchResults.count;
-        
-    }
+        }
     
+    else {
+        return self.searchResults.count;
+    }
 }
 
 
@@ -159,11 +148,9 @@
     static NSString *CellIdentifier = @"DealTableCell";
     DealTableCell *cell = (DealTableCell *)[self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    
     if (cell == nil) {
         cell = [[DealTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
     
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         
@@ -189,13 +176,18 @@
     
         cell.nameLabel.text = [object objectForKey:@"dealName"];
         cell.dealTeaser.text = [object objectForKey:@"dealTeaser"];
-    
+       
+        
+        //cell.dealChannel = [object objectForKey:@"dealChannel"];
+
         }
     
     return cell;
     
 }
 
+//*****************************
+//Segue
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showDealDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow]; DealDetailViewController *destViewController = segue.destinationViewController;
@@ -211,6 +203,7 @@
         deal.contact = [searchResults objectForKey:@"dealContact"];
         deal.specialOne = [searchResults objectForKey:@"specialOne"];
         deal.termsOfUse = [searchResults objectForKey:@"termsOfUse"];
+        deal.couponCode = [searchResults objectForKey:@"couponCode"];
         deal.channel = [searchResults objectForKey:@"dealChannel"];
         destViewController.deal= deal;
             
@@ -226,6 +219,7 @@
         deal.hours = [object objectForKey:@"dealHours"];
         deal.specialOne = [object objectForKey:@"specialOne"];
         deal.termsOfUse = [object objectForKey:@"termsOfUse"];
+        deal.couponCode = [object objectForKey:@"couponCode"];
         deal.channel = [object objectForKey:@"dealChannel"];
         destViewController.deal= deal;
         
@@ -235,16 +229,8 @@
     }
 }
 
-- (void)callbackWithResult:(NSArray *)results error:(NSError *)error
-{
-    if(!error) {
-        [self.searchResults removeAllObjects];
-        [self.searchResults addObjectsFromArray:results];
-        [self.searchDisplayController.searchResultsTableView reloadData];
-    }
-}
-
-
+//*******************************
+//Search
 - (void)filterResults:(NSString *)searchTerm {
     
     [self.searchResults removeAllObjects];
@@ -254,18 +240,16 @@
     [query whereKeyExists:@"dealTeaser"]; //this is based on whatever query you are trying to accomplish
     [query whereKey:@"dealName" containsString:searchTerm];
     
-    NSArray *results = [query findObjects];
+     NSArray *results = [query findObjects];
     
-    [self.searchResults addObjectsFromArray:results];
+     [self.searchResults addObjectsFromArray:results];
 
 }
-
 
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
     [self filterResults:searchString];
     
     return YES;
 }
-
 
 @end

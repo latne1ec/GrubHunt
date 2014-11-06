@@ -23,8 +23,6 @@
     CALayer *btnLayer = [okButton layer];
     [btnLayer setMasksToBounds:YES];
     [btnLayer setCornerRadius:5.0f];
-
-    
     
     self.navigationItem.hidesBackButton = YES;
 

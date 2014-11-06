@@ -16,6 +16,7 @@
 @synthesize description;
 @synthesize specialOne;
 @synthesize termsOfUse;
+@synthesize couponCode;
 @synthesize channel;
 
 

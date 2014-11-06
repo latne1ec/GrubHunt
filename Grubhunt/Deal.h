@@ -21,9 +21,8 @@
 @property (nonatomic, strong) NSArray *hours;
 @property (nonatomic, strong) NSArray *specialOne;
 @property (nonatomic, strong) NSArray *termsOfUse;
+@property (nonatomic, strong) NSArray *couponCode;
 @property (nonatomic, strong) NSString *channel;
-
-
 
 
 

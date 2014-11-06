@@ -29,9 +29,9 @@
 @synthesize dealImageDvc;
 @synthesize specialOneTextView;
 @synthesize termsOfUseTextView;
+@synthesize couponCodeTextView;
 @synthesize favButton;
 @synthesize redeemButton;
-
 @synthesize dealChannel;
 
 
@@ -72,6 +72,12 @@
         [termsOfUseText appendFormat:@"%@\n", terms];
     }
     self.termsOfUseTextView.text = termsOfUseText;
+    
+    NSMutableString *couponCodeText = [NSMutableString string];
+    for (NSString* couponCode in deal.couponCode) {
+        [couponCodeText appendFormat:@"%@\n", couponCode];
+    }
+    self.couponCodeTextView.text = couponCodeText;
 
     
     NSMutableString *addressText = [NSMutableString string];
@@ -111,17 +117,14 @@
     
     NSAttributedString *lineOne = [[NSAttributedString alloc] initWithString:(NSMutableString*)specialOneTextView.text attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:20],  NSParagraphStyleAttributeName : paragraphStyle}];
     
-    
     //self.dealImageView.file = deal.imageFile;
+    UIImage *icon = [UIImage imageNamed:@"GHPH.png"];
     
-    UIImage *icon = [UIImage imageNamed:@"GrubHuntPlaceHolder.png"];
-    
-    
-    NSAttributedString *lineTwo = [[NSAttributedString alloc] initWithString:@"Show this screen to your server to redeem offer" attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:18], NSForegroundColorAttributeName : [UIColor colorWithRed:173/255.0f green:0/255.0f blue:0/255.0f alpha:1.0f], NSParagraphStyleAttributeName : paragraphStyle}];
+    NSAttributedString *lineTwo = [[NSAttributedString alloc] initWithString:(NSMutableString*)couponCodeTextView.text attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:18], NSForegroundColorAttributeName : [UIColor colorWithRed:173/255.0f green:0/255.0f blue:0/255.0f alpha:1.0f], NSParagraphStyleAttributeName : paragraphStyle}];
     
     NSAttributedString *buttonTitle = [[NSAttributedString alloc] initWithString:@"Done" attributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:18], NSForegroundColorAttributeName : [UIColor whiteColor], NSParagraphStyleAttributeName : paragraphStyle}];
     
-    CNPPopupButtonItem *buttonItem = [CNPPopupButtonItem defaultButtonItemWithTitle:buttonTitle backgroundColor:[UIColor colorWithRed:173/255.0f green:0/255.0f blue:0/255.0f alpha:1.0f]];
+    CNPPopupButtonItem *buttonItem = [CNPPopupButtonItem defaultButtonItemWithTitle:buttonTitle backgroundColor:[UIColor colorWithRed:197/255.0f green:1/255.0f blue:1/255.0f alpha:1.0f]];
     buttonItem.selectionHandler = ^(CNPPopupButtonItem *item){
         //NSLog(@"Block for button: %@", item.buttonTitle.string);
     };
@@ -157,21 +160,52 @@
 }
 
 - (IBAction)subscribeToChannel:(id)sender {
-    
-    [self subscribeToChannelInBackground];
-    
-    UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Nice!!" message:@"This restaurant has been added to your favorites. You've got some great deals headed your way my friend." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    
-    [alertview show];
-    
-}
 
-//- (void)unsubscribeFromChannelInBackground {
-//    
-//    // When users indicate they are no longer Restaurant fans, we unsubscribe them.
-//    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-//    [currentInstallation removeObject:dealChannel forKey:@"channels"];
-//    [currentInstallation saveInBackground];
-//}
+    if (floor(NSFoundationVersionNumber) < NSFoundationVersionNumber_iOS_7_1) {
+        // if running iOS 7
+        
+        if ([[UIApplication sharedApplication] enabledRemoteNotificationTypes]) {
+            
+            UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Nice!" message:@"This restaurant has been added to your favorites. You've got some great deals headed your way." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            [alertview show];
+            
+        }
+        
+        else {
+            
+            [self subscribeToChannelInBackground];
+            
+            UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Houston, we have a problem." message:@"This restaurant has been added to your favorites but it looks like you need to enable push notifications before they can send you any deals. Go to your Phone Settings > Notifications > GrubHunt > Allow Notifications" delegate:nil cancelButtonTitle:@"Got it" otherButtonTitles:nil];
+            
+            [alertview show];
+            
+        }
+    }
+    
+    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1) {
+
+    //if running iOS 8
+    if ([[UIApplication sharedApplication] isRegisteredForRemoteNotifications]) {
+        
+        [self subscribeToChannelInBackground];
+        
+        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Nice!" message:@"This restaurant has been added to your favorites. You've got some great deals headed your way." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alertview show];
+        
+    }
+    
+    else {
+        
+        [self subscribeToChannelInBackground];
+        
+        UIAlertView *alertview = [[UIAlertView alloc] initWithTitle:@"Houston, we have a problem!" message:@"This restaurant has been added to your favorites but it looks like you need to enable push notifications before they can send you any deals. Go to your Phone Settings > Notifications > GrubHunt > Allow Notifications" delegate:nil cancelButtonTitle:@"Got it" otherButtonTitles:nil];
+        
+        [alertview show];
+        
+        }
+    }
+}
 
 @end

@@ -15,7 +15,6 @@
 		1A86126819FA829C00D8C01B /* DealView.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86126719FA829C00D8C01B /* DealView.png */; };
 		1A86127319FA964700D8C01B /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A86127219FA964700D8C01B /* InitialViewController.m */; };
 		1A86127B19FAD83B00D8C01B /* TableCellFade.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A86127A19FAD83B00D8C01B /* TableCellFade.png */; };
-		1A997A521A06DF80001E9E97 /* TargetLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A997A511A06DF80001E9E97 /* TargetLocation.png */; };
 		1ABA703919F4415300FA5272 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA703819F4415300FA5272 /* main.m */; };
 		1ABA703C19F4415300FA5272 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA703B19F4415300FA5272 /* AppDelegate.m */; };
 		1ABA704519F4415300FA5272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABA704319F4415300FA5272 /* Main.storyboard */; };
@@ -39,7 +38,9 @@
 		1ABA708019F44C2900FA5272 /* DealTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA707F19F44C2900FA5272 /* DealTableViewController.m */; };
 		1ABA708319F454AC00FA5272 /* DealioTableCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ABA708219F454AC00FA5272 /* DealioTableCell.png */; };
 		1ABA708619F4666C00FA5272 /* DealDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA708519F4666C00FA5272 /* DealDetailViewController.m */; };
-		1AE3B4131A08479E00E8AD00 /* GrubHuntPlaceHolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE3B4121A08479E00E8AD00 /* GrubHuntPlaceHolder@2x.png */; };
+		1ADEEEE61A137F1600557E8B /* InitialViewImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADEEEE51A137F1600557E8B /* InitialViewImage.png */; };
+		1ADEEEEA1A1386AF00557E8B /* TargetLocation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADEEEE91A1386AF00557E8B /* TargetLocation@2x.png */; };
+		1AF5264B1A0EC04900FD4773 /* GrubHuntPlaceHolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF5264A1A0EC04900FD4773 /* GrubHuntPlaceHolder@2x.png */; };
 		1AFAA77B1A09ADE5006DAB11 /* GHPH@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAA77A1A09ADE5006DAB11 /* GHPH@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +65,6 @@
 		1A86127119FA964700D8C01B /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
 		1A86127219FA964700D8C01B /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		1A86127A19FAD83B00D8C01B /* TableCellFade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableCellFade.png; sourceTree = "<group>"; };
-		1A997A511A06DF80001E9E97 /* TargetLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TargetLocation.png; sourceTree = "<group>"; };
 		1ABA703319F4415300FA5272 /* Grubhunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grubhunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABA703719F4415300FA5272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ABA703819F4415300FA5272 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,7 +97,9 @@
 		1ABA708219F454AC00FA5272 /* DealioTableCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DealioTableCell.png; sourceTree = "<group>"; };
 		1ABA708419F4666C00FA5272 /* DealDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DealDetailViewController.h; sourceTree = "<group>"; };
 		1ABA708519F4666C00FA5272 /* DealDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DealDetailViewController.m; sourceTree = "<group>"; };
-		1AE3B4121A08479E00E8AD00 /* GrubHuntPlaceHolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GrubHuntPlaceHolder@2x.png"; sourceTree = "<group>"; };
+		1ADEEEE51A137F1600557E8B /* InitialViewImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InitialViewImage.png; sourceTree = "<group>"; };
+		1ADEEEE91A1386AF00557E8B /* TargetLocation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TargetLocation@2x.png"; sourceTree = "<group>"; };
+		1AF5264A1A0EC04900FD4773 /* GrubHuntPlaceHolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GrubHuntPlaceHolder@2x.png"; sourceTree = "<group>"; };
 		1AFAA77A1A09ADE5006DAB11 /* GHPH@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GHPH@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,9 +253,10 @@
 		1AEFCA9A19F5C9090067BAFE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1ADEEEE91A1386AF00557E8B /* TargetLocation@2x.png */,
+				1ADEEEE51A137F1600557E8B /* InitialViewImage.png */,
+				1AF5264A1A0EC04900FD4773 /* GrubHuntPlaceHolder@2x.png */,
 				1AFAA77A1A09ADE5006DAB11 /* GHPH@2x.png */,
-				1AE3B4121A08479E00E8AD00 /* GrubHuntPlaceHolder@2x.png */,
-				1A997A511A06DF80001E9E97 /* TargetLocation.png */,
 				1A75A7421A03FBDD00618ADD /* searchBar.png */,
 				1A7E79761A012270008556F9 /* favStar3@2x.png */,
 				1A1824EA19FD2C150031099E /* Map Icon@2x.png */,
@@ -345,17 +348,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ADEEEEA1A1386AF00557E8B /* TargetLocation@2x.png in Resources */,
 				1AFAA77B1A09ADE5006DAB11 /* GHPH@2x.png in Resources */,
 				1ABA708319F454AC00FA5272 /* DealioTableCell.png in Resources */,
 				1ABA704519F4415300FA5272 /* Main.storyboard in Resources */,
 				1A1824EB19FD2C150031099E /* Map Icon@2x.png in Resources */,
 				1ABA704A19F4415300FA5272 /* LaunchScreen.xib in Resources */,
 				1A86126819FA829C00D8C01B /* DealView.png in Resources */,
-				1AE3B4131A08479E00E8AD00 /* GrubHuntPlaceHolder@2x.png in Resources */,
 				1ABA704719F4415300FA5272 /* Images.xcassets in Resources */,
+				1ADEEEE61A137F1600557E8B /* InitialViewImage.png in Resources */,
+				1AF5264B1A0EC04900FD4773 /* GrubHuntPlaceHolder@2x.png in Resources */,
 				1A75A7431A03FBDD00618ADD /* searchBar.png in Resources */,
 				1A7E79771A012270008556F9 /* favStar3@2x.png in Resources */,
-				1A997A521A06DF80001E9E97 /* TargetLocation.png in Resources */,
 				1A1824E919FD2BFE0031099E /* Phone Icon@2x.png in Resources */,
 				1A86127B19FAD83B00D8C01B /* TableCellFade.png in Resources */,
 			);

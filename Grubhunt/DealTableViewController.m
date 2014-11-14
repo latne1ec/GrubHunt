@@ -31,10 +31,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Add locked special ID for nil deals
+    self.user = [PFUser currentUser];
+    [self.user addUniqueObject:@"locked" forKey:@"dealsRedeemed"];
+    
     //Reroute to initial view to create user
     PFUser *currentuser = [PFUser currentUser];
     if (currentuser) {
+        
         [[PFUser currentUser] incrementKey:@"RunCount"];
+        
     }
     
     else {
@@ -64,7 +70,6 @@
     
     [[UISearchBar appearance] setBackgroundImage:[UIImage imageNamed:@"searchBar.png"]];
 
-
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -87,7 +92,6 @@
     }
 }
 
-
 - (id)initWithCoder:(NSCoder *)aCoder
 {
     self = [super initWithCoder:aCoder];
@@ -102,7 +106,7 @@
         self.pullToRefreshEnabled = YES;
         
         //Whether the built in pagination is enabled
-        self.paginationEnabled = YES;
+        self.paginationEnabled = NO;
     }
     return self;
 }
@@ -116,7 +120,7 @@
     
     PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
     [query orderByAscending:@"dealName"];
-   // [query whereKey:@"dealLocation" nearGeoPoint:self.userLocation withinMiles:25];
+    [query whereKey:@"dealLocation" nearGeoPoint:self.userLocation withinMiles:25];
     
     return query;
     
@@ -140,7 +144,6 @@
         return self.searchResults.count;
     }
 }
-
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object
@@ -202,9 +205,16 @@
         deal.address = [searchResults objectForKey:@"dealAddress"];
         deal.contact = [searchResults objectForKey:@"dealContact"];
         deal.specialOne = [searchResults objectForKey:@"specialOne"];
+        deal.specialTwo = [searchResults objectForKey:@"specialTwo"];
+        deal.specialThree = [searchResults objectForKey:@"specialThree"];
         deal.termsOfUse = [searchResults objectForKey:@"termsOfUse"];
-        deal.couponCode = [searchResults objectForKey:@"couponCode"];
+        deal.couponCodeOne = [searchResults objectForKey:@"couponCodeOne"];
+        deal.couponCodeTwo = [searchResults objectForKey:@"couponCodeTwo"];
+        deal.couponCodeThree = [searchResults objectForKey:@"couponCodeThree"];
         deal.channel = [searchResults objectForKey:@"dealChannel"];
+        deal.specialOneId = [searchResults objectForKey:@"specialOneId"];
+        deal.specialTwoId = [searchResults objectForKey:@"specialTwoId"];
+        deal.specialThreeId = [searchResults objectForKey:@"specialThreeId"];
         destViewController.deal= deal;
             
         } else {
@@ -218,9 +228,16 @@
         deal.contact = [object objectForKey:@"dealContact"];
         deal.hours = [object objectForKey:@"dealHours"];
         deal.specialOne = [object objectForKey:@"specialOne"];
+        deal.specialTwo = [object objectForKey:@"specialTwo"];
+        deal.specialThree = [object objectForKey:@"specialThree"];
         deal.termsOfUse = [object objectForKey:@"termsOfUse"];
-        deal.couponCode = [object objectForKey:@"couponCode"];
+        deal.couponCodeOne = [object objectForKey:@"couponCodeOne"];
+        deal.couponCodeTwo = [object objectForKey:@"couponCodeTwo"];
+        deal.couponCodeThree = [object objectForKey:@"couponCodeThree"];
         deal.channel = [object objectForKey:@"dealChannel"];
+        deal.specialOneId = [object objectForKey:@"specialOneId"];
+        deal.specialTwoId = [object objectForKey:@"specialTwoId"];
+        deal.specialThreeId = [object objectForKey:@"specialThreeId"];
         destViewController.deal= deal;
         
         destViewController.hidesBottomBarWhenPushed = YES;

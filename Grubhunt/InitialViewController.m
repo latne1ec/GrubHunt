@@ -8,6 +8,7 @@
 
 #import "InitialViewController.h"
 #import <Parse/Parse.h>
+#import "DealTableViewController.h"
 
 @interface InitialViewController ()
 
@@ -22,7 +23,7 @@
     
     CALayer *btnLayer = [okButton layer];
     [btnLayer setMasksToBounds:YES];
-    [btnLayer setCornerRadius:5.0f];
+    [btnLayer setCornerRadius:3.5f];
     
     self.navigationItem.hidesBackButton = YES;
 
@@ -35,7 +36,11 @@
     [PFUser enableAutomaticUser];
     [[PFUser currentUser] incrementKey:@"RunCount"];
     [[PFUser currentUser] saveInBackground];
-    NSLog(@"Created User");
+     NSLog(@"Created User");
     
 }
+
+
+
+
 @end

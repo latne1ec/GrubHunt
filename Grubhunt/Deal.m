@@ -15,9 +15,18 @@
 @synthesize imageFile;
 @synthesize description;
 @synthesize specialOne;
+@synthesize specialTwo;
+@synthesize specialThree;
 @synthesize termsOfUse;
-@synthesize couponCode;
+@synthesize couponCodeOne;
+@synthesize couponCodeTwo;
+@synthesize couponCodeThree;
 @synthesize channel;
+@synthesize specialOneId;
+@synthesize specialTwoId;
+@synthesize specialThreeId;
+
+
 
 
 @end

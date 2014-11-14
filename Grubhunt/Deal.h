@@ -20,9 +20,19 @@
 @property (nonatomic, strong) NSString *contact;
 @property (nonatomic, strong) NSArray *hours;
 @property (nonatomic, strong) NSArray *specialOne;
+@property (nonatomic, strong) NSArray *specialTwo;
+@property (nonatomic, strong) NSArray *specialThree;
 @property (nonatomic, strong) NSArray *termsOfUse;
-@property (nonatomic, strong) NSArray *couponCode;
+@property (nonatomic, strong) NSArray *couponCodeOne;
+@property (nonatomic, strong) NSArray *couponCodeTwo;
+@property (nonatomic, strong) NSArray *couponCodeThree;
 @property (nonatomic, strong) NSString *channel;
+@property (nonatomic, strong) NSString *specialOneId;
+@property (nonatomic, strong) NSString *specialTwoId;
+@property (nonatomic, strong) NSString *specialThreeId;
+
+
+
 
 
 
